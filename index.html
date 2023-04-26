@@ -1,0 +1,124 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
+ */
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Required meta tags -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <?php echo get_post_meta( get_the_ID(), 'title_61299', TRUE );?>
+  </title>
+  <meta name="Keywords" content="<?php echo get_post_meta( get_the_ID(), 'keywords_14162', TRUE );?>">
+         
+  <meta name="description" content="<?php echo get_post_meta( get_the_ID(), 'description_45125', TRUE );?>">
+  <!--Bootstrap Css-->
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url');?>/css/bootstrap.min.css">
+  <!-- Font-awesome Css -->
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url');?>/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <!-- Animation Css -->
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url');?>/css/animate.css">
+  <!-- Custom Style Css -->
+  <link rel="stylesheet" href="<?php echo bloginfo('template_url');?>/css/style.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+  <?php echo get_option('headercode_89172'); ?>
+  <?php wp_head(); ?>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="110" id="banner">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X72429" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar transition fixed-top" id="navigation">
+    <div class="container">
+      <a href="<?php echo home_url(); ?>"><img src="<?php echo get_option('logo_85131'); ?>" class="nav-img img-fluid"
+          alt="theme logo"></a>
+      <div class="bar-toggler">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#howit">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#our_solution">Solution</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#our_plan">Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#benefits">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="<?php echo home_url(); ?>/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll navcontact" href="https://www.eazyvets.com/#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-bar transition">
+      <div class="menu-bar-data">
+        <ul>
+          <li class="menu-logo"><img src="<?php echo bloginfo('template_url');?>/images/logo/logo.png" alt="theme logo">
+          <li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/">Home</a></li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/#howit">How it works</a></li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/#our_solution">Solution</a></li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/#features">Features</a></li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="https://www.eazyvets.com/#team">Team</a>
+          </li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/#our_plan">Plans</a></li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/#benefits">Benefits</a></li>
+                             <li><a class="nav-link page-scroll" href="<?php echo home_url(); ?>/blog">Blog</a></li>
+          <li><a class="nav-link page-scroll" href="https://www.eazyvets.com/#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
